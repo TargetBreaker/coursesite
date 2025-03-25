@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact/Sign-Up</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="logo">CourseSite</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-btn">Courses</a>
+        <ul class="dropdown-content">
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="data-science.html">Data Science</a></li>
+          <li><a href="graphic-design.html">Graphic Design</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="register.html">Enroll</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="contact-form">
+  <h1>Sign Up for a Course</h1>
+  <form id="signupForm" action="submit-form-url" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+    <label for="course">Select Course</label>
+    <select id="course" name="course">
+      <option value="web-development">Web Development</option>
+      <option value="data-science">Data Science</option>
+      <option value="graphic-design">Graphic Design</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<div id="successPopup" class="popup">
+  <div class="popup-content">
+    <h2>Registration Successful!</h2>
+    <p>Your registration has been successfully submitted. Thank you!</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2025 CourseSite. All Rights Reserved.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
