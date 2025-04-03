@@ -56,6 +56,22 @@ body {
     text-transform: uppercase;
 }
 
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 50%, #ffffff 100%);
+}
+
+marquee {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    background: transparent;
+    color: black;
+    padding: 10px 0;
+}
+
 /* Dropdown Menu */
 .dropdown-content {
     display: none;
